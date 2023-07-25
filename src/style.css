@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+main h1,
+main p {
+  text-wrap: balance;
+}
