@@ -1,5 +1,6 @@
 import Link from "./components/Link";
 import Logo from "./components/Logo";
+import pdf from "./assets/ChandraMouliVayiletiResume.pdf";
 
 function App() {
   return (
@@ -54,7 +55,7 @@ function App() {
         </div>
         <div className="flex items-center gap-1">
           <a
-            href="src/assets/ChandraMouliVayiletiResume.pdf"
+            href={pdf}
             download="ChandraMouliVayiletiResume.pdf"
             className="text-white font-medium underline underline-offset-4 decoration-neutral-700 hover:decoration-white transition-colors duration-500 decoration-1 outline-none focus:decoration-white flex gap-2 items-center"
           >
