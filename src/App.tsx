@@ -1,12 +1,12 @@
 import Link from "./components/Link";
-import Logo from "./assets/logo.svg";
+import Logo from "./components/Logo";
 
 function App() {
   return (
     <div className="max-w-2xl mx-auto text-neutral-300 p-[0.5px] px-6">
       <nav className="py-5">
         <a href="/" className="focus-visible:outline-red-700 rounded-full">
-          <img src={Logo} />
+          <Logo />
         </a>
       </nav>
       <main className="mx-auto my-10">
@@ -54,7 +54,7 @@ function App() {
         </div>
         <div className="flex items-center gap-1">
           <a
-            href="./src/assets/ChandraMouliVayiletiResume.pdf"
+            href="/src/assets/ChandraMouliVayiletiResume.pdf"
             download="ChandraMouliVayiletiResume.pdf"
             className="text-white font-medium underline underline-offset-4 decoration-neutral-700 hover:decoration-white transition-colors duration-500 decoration-1 outline-none focus:decoration-white flex gap-2 items-center"
           >
