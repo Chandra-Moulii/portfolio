@@ -7,7 +7,7 @@ function App() {
     <div className="max-w-2xl mx-auto text-neutral-300 p-[0.5px] px-6">
       <nav className="py-5">
         <a
-          href="/potfolio"
+          href="/portfolio"
           className="focus-visible:outline-red-700 rounded-full"
         >
           <Logo />
@@ -44,8 +44,8 @@ function App() {
               find my full projects&nbsp;
             </Link>
             list here. I also do some codepens on&nbsp;
-            <Link href="https://codepen.io/v_chandramouli">codepen</Link>
-            &nbsp;ocasinally.
+            <Link href="https://codepen.io/v_chandramouli">codepens</Link>
+            &nbsp;occasionally.
           </p>
         </div>
         <div className="my-6">
