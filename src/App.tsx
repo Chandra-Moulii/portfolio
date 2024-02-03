@@ -44,7 +44,7 @@ function App() {
               find my full projects&nbsp;
             </Link>
             list here. I also do some codepens on&nbsp;
-            <Link href="https://codepen.io/v_chandramouli">codepens</Link>
+            <Link href="https://codepen.io/v_chandramouli">codepen.io</Link>
             &nbsp;occasionally.
           </p>
         </div>
