@@ -9,7 +9,7 @@ function App() {
           <Logo />
         </a>
       </nav>
-      <main className="mx-auto my-10">
+      <main className="mx-auto my-5 md:my-10">
         <h1 className="text-3xl font-black text-white">Chandra Mouli</h1>
         <div className="my-6">
           <p>Hey, I am Chandra Mouli, a fantastic web developer.</p>
@@ -54,7 +54,7 @@ function App() {
         </div>
         <div className="flex items-center gap-1">
           <a
-            href="/src/assets/ChandraMouliVayiletiResume.pdf"
+            href="src/assets/ChandraMouliVayiletiResume.pdf"
             download="ChandraMouliVayiletiResume.pdf"
             className="text-white font-medium underline underline-offset-4 decoration-neutral-700 hover:decoration-white transition-colors duration-500 decoration-1 outline-none focus:decoration-white flex gap-2 items-center"
           >
