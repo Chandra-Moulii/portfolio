@@ -8,7 +8,7 @@ function App() {
       <nav className="py-5">
         <a
           href="/portfolio"
-          className="focus-visible:outline-red-700 rounded-full"
+          className="before:content-[''] relative before:absolute before:-bottom-2 before:left-0 before:right-0 before:w-full before:h-[3px] before:bg-neutral-400 inline-block outline-none before:hidden focus-visible:before:block"
         >
           <Logo />
         </a>
