@@ -6,7 +6,10 @@ function App() {
   return (
     <div className="max-w-2xl mx-auto text-neutral-300 p-[0.5px] px-6">
       <nav className="py-5">
-        <a href="/" className="focus-visible:outline-red-700 rounded-full">
+        <a
+          href="/potfolio"
+          className="focus-visible:outline-red-700 rounded-full"
+        >
           <Logo />
         </a>
       </nav>
