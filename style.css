@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Regular";
+}
+
+:root {
+  --text-color: 88, 88, 88;
+  --black-stroke: 11, 11, 11;
+  --white-stroke: 255, 255, 255;
+}
+
+a {
+  outline: none;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color 0.5s ease;
+  text-underline-offset: 2px;
+  text-decoration-color: rgb(var(--text-color));
+}
+a:hover,
+a:focus-visible {
+  color: rgb(var(--black-stroke));
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: rgb(var(--black-stroke));
+}
+
+body {
+  font-size: 0.92rem;
+  color: rgb(var(--text-color));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("assets/Bg_Image.png");
+}
+
+.wrapper {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 630px;
+  min-height: 100dvh;
+  background-color: rgba(var(--white-stroke), 0.3);
+}
+
+.wrapper nav img {
+  opacity: 0.5;
+  user-select: none;
+}
+
+main {
+  gap: 1rem;
+  display: grid;
+  margin: 4rem 0 2rem 0;
+}
+
+main img {
+  --_size: 70px;
+  object-fit: cover;
+  width: var(--_size);
+  height: var(--_size);
+  border: 3.5px solid rgba(var(--white-stroke));
+  box-shadow: 2px 2px 12px rgba(var(--black-stroke), 0.1),
+    -2px -2px 12px rgba(var(--black-stroke), 0.1);
+}
+
+main h1 {
+  font-size: inherit;
+  font-weight: 500;
+  text-wrap: balance;
+}
+
+main h1 #name {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: rgb(var(--black-stroke));
+}
+
+main h1 .blink {
+  animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  gap: 1rem;
+  display: grid;
+  text-wrap: pretty;
+  line-height: 150%;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer div {
+  gap: 0.4rem;
+  display: grid;
+}
+
+footer .otherLinks {
+  gap: 0.2rem;
+  display: inline-flex;
+}
+
+footer #resumeAsset {
+  display: none;
+}
+
+footer button {
+  outline: none;
+  cursor: pointer;
+  font-size: unset;
+  user-select: none;
+  font-family: unset;
+  color: rgb(var(--text-color));
+  margin-bottom: 2rem;
+  padding: 0.35rem 1rem;
+  transition: transform 0.3s linear;
+  color: rgb(var(--white-stroke));
+  outline: 2px solid transparent;
+  border: 2px solid rgb(var(--text-color));
+  background-color: rgb(var(--text-color));
+}
+
+footer button:hover,
+button:focus-visible {
+  outline-offset: 1.75px;
+  outline: 2px solid rgb(var(--text-color));
+}
+
+footer button:active {
+  --_offset: 5px;
+  transform: translate(var(--_offset), var(--_offset));
+}
