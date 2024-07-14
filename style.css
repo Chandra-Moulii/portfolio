@@ -49,6 +49,11 @@ body {
   user-select: none;
 }
 
+nav a:focus-visible {
+  outline-offset: 4px;
+  outline: 2px solid rgb(var(--text-color));
+}
+
 main {
   gap: 1rem;
   display: grid;
