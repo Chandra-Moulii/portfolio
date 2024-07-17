@@ -7,6 +7,10 @@
   font-family: "Open Sans";
 }
 
+body {
+  cursor: url("assets/textCursor.png"), auto;
+}
+
 :root {
   --text-color: 88, 88, 88;
   --black-stroke: 11, 11, 11;
@@ -20,6 +24,7 @@ a {
   transition: color 0.5s ease;
   text-underline-offset: 2px;
   text-decoration-color: rgb(var(--text-color));
+  cursor: url("assets/buttonCursor.png"), pointer;
 }
 a:hover,
 a:focus-visible {
@@ -134,6 +139,7 @@ footer button {
   outline: 2px solid transparent;
   border: 2px solid rgb(var(--text-color));
   background-color: rgb(var(--text-color));
+  cursor: url("assets/buttonCursor.png"), pointer;
 }
 
 footer button:hover,
