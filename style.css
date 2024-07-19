@@ -43,7 +43,7 @@ body {
   color: rgb(var(--text-color));
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("assets/images/Bg_Image.png");
+  background-image: url("assets/images/compBgImage.png");
 }
 
 .wrapper {
