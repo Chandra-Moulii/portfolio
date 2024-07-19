@@ -1,10 +1,15 @@
+@font-face {
+  font-family: "openSans";
+  src: url("assets/font/OpenSans-Regular.woff") format("woff");
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans";
+  font-family: "openSans", Arial, sans-serif;
 }
 
 body {
