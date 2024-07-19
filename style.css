@@ -13,7 +13,7 @@
 }
 
 body {
-  cursor: url("assets/textCursor.png"), auto;
+  cursor: url("assets/images/textCursor.png"), auto;
 }
 
 :root {
@@ -29,7 +29,7 @@ a {
   transition: color 0.5s ease;
   text-underline-offset: 2px;
   text-decoration-color: rgb(var(--text-color));
-  cursor: url("assets/buttonCursor.png"), pointer;
+  cursor: url("assets/images/buttonCursor.png"), pointer;
 }
 a:hover,
 a:focus-visible {
@@ -43,7 +43,7 @@ body {
   color: rgb(var(--text-color));
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("assets/Bg_Image.png");
+  background-image: url("assets/images/Bg_Image.png");
 }
 
 .wrapper {
@@ -144,7 +144,7 @@ footer button {
   outline: 2px solid transparent;
   border: 2px solid rgb(var(--text-color));
   background-color: rgb(var(--text-color));
-  cursor: url("assets/buttonCursor.png"), pointer;
+  cursor: url("assets/images/buttonCursor.png"), pointer;
 }
 
 footer button:hover,
