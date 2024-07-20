@@ -16,10 +16,6 @@
   background-color: rgb(var(--text-color), 0.1);
 }
 
-body {
-  cursor: url("assets/images/textCursor.png"), auto;
-}
-
 :root {
   --text-color: 50, 50, 50;
   --black-stroke: 11, 11, 11;
@@ -35,6 +31,7 @@ a {
   text-decoration-color: rgb(var(--text-color));
   cursor: url("assets/images/buttonCursor.png"), pointer;
 }
+
 a:hover,
 a:focus-visible {
   color: rgb(var(--black-stroke));
@@ -44,9 +41,10 @@ a:focus-visible {
 
 body {
   font-size: 0.92rem;
-  color: rgb(var(--text-color));
   background-size: cover;
+  color: rgb(var(--text-color));
   background-repeat: no-repeat;
+  cursor: url("assets/images/textCursor.png"), auto;
   background-image: url("assets/images/compBgImage.png");
 }
 
@@ -144,10 +142,10 @@ footer button {
   font-size: unset;
   user-select: none;
   font-family: unset;
-  color: rgb(var(--text-color));
   margin-bottom: 2rem;
   padding: 0.35rem 1rem;
   transition: all 0.1s linear;
+  color: rgb(var(--text-color));
   color: rgb(var(--white-stroke));
   outline: 2px solid transparent;
   border: 2px solid rgb(var(--text-color));
