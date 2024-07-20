@@ -139,7 +139,7 @@ footer button {
   color: rgb(var(--text-color));
   margin-bottom: 2rem;
   padding: 0.35rem 1rem;
-  transition: transform 0.3s linear;
+  transition: all 0.1s linear;
   color: rgb(var(--white-stroke));
   outline: 2px solid transparent;
   border: 2px solid rgb(var(--text-color));
@@ -149,11 +149,11 @@ footer button {
 
 footer button:hover,
 button:focus-visible {
-  outline-offset: 1.75px;
-  outline: 2px solid rgb(var(--text-color));
+  box-shadow: rgba(var(--text-color), 0.4) 5px 5px,
+    rgba(var(--text-color), 0.1) 10px 10px;
 }
 
 footer button:active {
-  --_offset: 5px;
+  --_offset: 2px;
   transform: translate(var(--_offset), var(--_offset));
 }
