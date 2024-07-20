@@ -116,6 +116,10 @@ section {
   line-height: 150%;
 }
 
+section abbr {
+  text-underline-offset: 2px;
+}
+
 footer {
   margin-top: 2rem;
 }

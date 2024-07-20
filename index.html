@@ -11,19 +11,19 @@
     <div class="wrapper">
       <nav>
         <a href="/" target="_parent">
-          <img src="assets/Cm.svg" alt="Logo" draggable="false" />
+          <img src="assets/Cm.svg" alt="Logo." draggable="false" />
         </a>
       </nav>
       <main>
         <img
           draggable="false"
-          alt="Profile Picture"
+          alt="Profile Picture."
           src="/assets/images/Profile.png"
         />
-        <h1>
-          Hi 👋 I am,
-          <span id="name">{ <span class="blink">_</span>Chandra Mouli }</span>
-          <span id="myAge"></span>
+        <h1 aria-label="Hello, i am Chandra Mouli.">
+          Hi, 👋 I am
+          <span id="name">{ <span class="blink" aria-hidden="true">_</span>Chandra Mouli }</span>
+          <span id="myAge" aria-hidden="true"></span>
         </h1>
       </main>
       <section>
@@ -31,29 +31,30 @@
           I am a passionate front-end developer from India with 1 year of
           experience, who wants to create beautiful and super minimalistic
           websites, currently working at
-          <a href="https://www.yallas.tech/">$Yallas</a>.
+          <a href="https://www.yallas.tech/">Yallas</a>.
         </div>
         <div>
           Here are some of my personal projects -
           <a href="https://chandra-moulii.github.io/crispthoughtscorner/"
             >CrispThoughtsCorner</a
           > (Blog website),
-          <a href="https://shortifyurl.vercel.app/">Shotify</a> (URL shortener)
+          <a href="https://shortifyurl.vercel.app/">Shortify</a> (URL shortener)
           and <a href="https://todo-list-appp.web.app/">Todo List</a>.
         </div>
         <div>
           In my free time i do codepens and coding challenges. Other than
-          programming i enjoy playing badminton & watching movies/series (GOT is
-          one of my favourites 😍).
+          programming i enjoy playing badminton & watching movies/series ( <abbr aria-label="Game of thrones" title="Game of thrones">GOT</abbr> is
+          one of my favourites <span aria-hidden="true">😍</span>).
         </div>
       </section>
       <footer>
         <a
           id="resumeAsset"
+          aria-hidden="true"
           download="ChandraMouliVayiletiResume"
           href="/assets/ChandraMouliVayiletiResume.pdf"
         ></a>
-        <button>Download Resume</button>
+        <button aria-label="Download my Resume.">Download Resume</button>
         <div>
           <p>
             <span>Find me on - </span>
@@ -63,7 +64,7 @@
                 >Codepen</a
               >,
               <a href="https://www.linkedin.com/in/chandra-moulii/">Linkedin</a>
-            </span>
+            </span>.
           </p>
           <p>Contact me at - chandramouliv22@gmail.com</p>
         </div>
