@@ -20,23 +20,27 @@
   --text-color: 50, 50, 50;
   --black-stroke: 11, 11, 11;
   --white-stroke: 255, 255, 255;
+  --a11y-access-color: 253 224 71;
 }
 
 a {
   outline: none;
+  padding: 0 2px;
   font-weight: 600;
   color: var(--text-color);
-  transition: color 0.5s ease;
   text-underline-offset: 2px;
   text-decoration-color: rgb(var(--text-color));
   cursor: url("assets/images/buttonCursor.png"), pointer;
 }
 
-a:hover,
-a:focus-visible {
+a:hover {
   color: rgb(var(--black-stroke));
   text-decoration-thickness: 1.5px;
   text-decoration-color: rgb(var(--black-stroke));
+}
+a:focus-visible {
+  text-decoration-thickness: 1.5px;
+  background-color: rgb(var(--a11y-access-color));
 }
 
 body {
@@ -61,8 +65,13 @@ body {
   user-select: none;
 }
 
+nav a {
+  padding: 0;
+}
+
 nav a:focus-visible {
   outline-offset: 4px;
+  background-color: transparent;
   outline: 2px solid rgb(var(--text-color));
 }
 
