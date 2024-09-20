@@ -171,3 +171,7 @@ footer button:active {
   --_offset: 2px;
   transform: translate(var(--_offset), var(--_offset));
 }
+
+footer b {
+  display: none;
+}
