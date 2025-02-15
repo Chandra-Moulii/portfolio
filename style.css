@@ -82,13 +82,23 @@ main {
 }
 
 main img {
-  --_size: 70px;
+  --_size: 100px;
   object-fit: cover;
   width: var(--_size);
   height: var(--_size);
+  transition: all 0.15s ease-out;
   border: 3.5px solid rgba(var(--white-stroke));
   box-shadow: 2px 2px 12px rgba(var(--black-stroke), 0.1),
     -2px -2px 12px rgba(var(--black-stroke), 0.1);
+}
+
+main img:hover {
+  scale: 2.5;
+  z-index: 10;
+}
+
+body:has(img:hover) :is(section, footer, nav, h1) {
+  filter: blur(6px);
 }
 
 main h1 {
@@ -153,9 +163,9 @@ footer button {
   font-family: unset;
   margin-bottom: 2rem;
   padding: 0.35rem 1rem;
-  transition: all 0.1s linear;
   color: rgb(var(--white-stroke));
   outline: 2px solid transparent;
+  transition: box-shadow 0.1s linear;
   border: 2px solid rgb(var(--text-color));
   background-color: rgb(var(--text-color));
   cursor: url("assets/images/buttonCursor.png"), pointer;
