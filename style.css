@@ -86,19 +86,22 @@ main img {
   object-fit: cover;
   width: var(--_size);
   height: var(--_size);
+  transform-origin: 0% 0%;
   transition: all 0.15s ease-out;
   border: 3.5px solid rgba(var(--white-stroke));
   box-shadow: 2px 2px 12px rgba(var(--black-stroke), 0.1),
     -2px -2px 12px rgba(var(--black-stroke), 0.1);
 }
 
-main img:hover {
+main img:hover,
+main img:focus-visible {
   scale: 2.5;
   z-index: 10;
 }
 
-body:has(img:hover) :is(section, footer, nav, h1) {
+body:has(img:hover, img:focus-visible) :is(section, footer, nav, h1) {
   filter: blur(6px);
+  pointer-events: none;
 }
 
 main h1 {
