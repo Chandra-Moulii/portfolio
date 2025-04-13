@@ -99,7 +99,8 @@ main img:focus-visible {
   z-index: 10;
 }
 
-body:has(img:hover, img:focus-visible) :is(section, footer, nav, h1) {
+body:has(main > img:hover, main > img:focus-visible)
+  :is(section, footer, nav, h1) {
   filter: blur(6px);
   pointer-events: none;
 }
