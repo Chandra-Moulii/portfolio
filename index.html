@@ -22,8 +22,7 @@
           src="/assets/images/Profile.png"
         />
         <h1 aria-label="Hello, i am Chandra Mouli.">
-          let greetings = "Hi, I am <span id="name">Chandra Mouli</span>
-          <span id="myAge"></span>"
+          const greetings = "Hi, I am <span id="name">Chandra Mouli</span>"
         </h1>
       </main>
       <section>
@@ -35,13 +34,9 @@
           Microsoft Dynamics365 and .NET backend.
         </div>
         <div>
-          One of my notable personal projects -
-          <a href="#" target="_self">CrispThoughtsCorner</a>
-          (Blog website - Soon)
-        </div>
-        <div>
-          In my free time i do codepens and coding challenges. Other than
-          programming i enjoy playing badminton & watching movies/series (
+          In my free time, I work on automations to simplify my daily tasks and
+          take on coding challenges. Other than programming i enjoy playing
+          badminton & watching movies/series (
           <abbr aria-label="Game of thrones" title="Game of thrones">GOT</abbr>
           is one of my favourites <span aria-hidden="true">😍</span>).
         </div>
@@ -77,17 +72,6 @@
       button.addEventListener("click", () => {
         resumeAssetLink.click();
       });
-      (() => {
-        const ageRef = document.querySelector("#myAge");
-        const myBdy = new Date("August 10 2001");
-        const currentDate = new Date();
-        const currentAgeInYears = Math.floor(
-          (currentDate - myBdy) / (1000 * 60 * 60 * 24 * 365.15)
-        );
-        if (Number.isInteger(currentAgeInYears)) {
-          ageRef.textContent = `(${currentAgeInYears})`;
-        }
-      })();
     </script>
   </body>
 </html>
